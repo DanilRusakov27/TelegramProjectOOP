@@ -1,9 +1,9 @@
 package one;
-import interfaces.Get_data;
+import interfaces.GetData;
 
 import java.util.Scanner;
-public class Write implements Get_data {
-    public  Write(){};
+public class Read implements GetData {
+    public Read(){};
     String inputData;
     public void writeData() {
         Scanner data = new Scanner(System.in);
