@@ -1,7 +1,7 @@
 package one;
 
-import interfaces.Output_data;
-public class Out implements Output_data {
+import interfaces.OutputData;
+public class Out implements OutputData {
     public String outputData;
    ;
     public Out(String data)

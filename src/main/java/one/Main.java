@@ -1,13 +1,14 @@
 package one;
-import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
-        Write messageIN = new Write();
+        while(true){
+        Read messageIN = new Read();
         messageIN.writeData();
-
         Data data = new Data(messageIN.inputData);
         Out messageOUT=new Out(data.data);
         messageOUT.outData();
+        }
 
     }
 
