@@ -3,9 +3,10 @@ import interfaces.Reader;
 import records.Request;
 import java.util.Scanner;
 public class RequestReader implements Reader {
+    private final Scanner inputScanner = new Scanner(System.in);
+
     @Override
     public Request read() {
-        Scanner data = new Scanner(System.in);
-        return new Request(data.nextLine());
+        return new Request(inputScanner.nextLine());
     }
 }
